@@ -50,12 +50,23 @@ Include an image of your Priority Matrix (X is time and Y is priority)
 ![img_1716](https://media.git.generalassemb.ly/user/25138/files/ac9ed000-3ea0-11ea-9d2e-0268501f892d)
 
 Timeframes
-Timeframes are key in the development cycle. You have limited time to code and so much to accomplish! Look at all of your planned files and components, and all of the areas of development you are planning and give an estimate of how long each one will take to complete. It's always best to pad the time to account for the unknown, so be sure to add an additional hour or two to play it safe. As you progress, you can update the "Time Invested" column to keep track of your hours, but that number should turn into "Actual Time" by the presentation day. Also, put a winter-themed gif at the top of your readme before you pitch to show you read the instructions thoroughly.
 
-Component	Priority	Estimated Time	Time Invested	Actual Time
-Adding Form	H	3hrs	3.5hrs	3.5hrs
-Working with API	H	3hrs	2.5hrs	2.5hrs
-Total	H	6hrs	5hrs	5hrs
+
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| App.js | M | 4hrs |
+| Access API | H | 4 hrs |
+| Build Searchbar | H | 8hrs| 
+| Definition render| H | 4hrs| 
+| Header.js| M | 2hrs|
+| Footer.js| M | 1hrs|
+| Search.js| H | 4 hrs|
+| Main.js| H 8hrs|
+| Search suggested results| H | 6 hrs|
+| Post-MVP: CSS| H | 8hrs|
+| Post-MVP: Second API| M| 4hrs|
+Total: 53 hours.
+
 Project Schedule
 This schedule will be used to keep track of your progress throughout the week and align with our expectations.
 
@@ -63,16 +74,19 @@ You are responsible for scheduling time with your squad to seek approval for eac
 
 Day	Deliverable	Status
 Jan 24th	Project Pitch / Wireframes / Priority Matrix / Functional Components	Incomplete
-Jan 27th	Core Application Structure (HTML, CSS, etc.)	Incomplete
-Jan 28th	Pseudocode / actual code	Incomplete
-Jan 29th	Initial Clickable Model	Incomplete
-Jan 30th	MVP	Incomplete
+Jan 27th	Build searchbar., API working	Incomplete
+Jan 28th	Defintion render, header/footer	Incomplete
+Jan 29th	Post/MVP:Suggest search results	Incomplete
+Jan 30th	Post-MVP/CSS, 2nd API	Incomplete
 Jan 31tst	Present	Incomplete
 Additional Libraries
 Use this section to list all supporting libraries and thier role in the project. React Router Dom and Axios should be listed here at the very least.
 
+Will download Axios and  react-router-dom.
+
 Issues and Resolutions
-Use this section to list of all major issues you anticipate encountering during development and how you plan to tackle them. Be sure to update this section during development, documenting the actual resolutions you inacted, as well as any other unexpected obstacles you encountered along the way.
+
+Majority of issues should arise in mapping and getting the searchbar to work- with additional problems suggesting searches in Post-MVP.
 
 Code Snippet
 Use this section to include a brief code snippet you are proud of, along with a brief description of why.
