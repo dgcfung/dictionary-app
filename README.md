@@ -18,10 +18,12 @@ MVP
 -Navigate to new component page upon click.
 - Render supporting two supporting details
 -Home button navigating back to Home
+-Parsing defintition.
 
 Post-MVP
 
 - Top priortiy: Searchbar will render suggestions based on input
+- Priority: parsing images/antonyms/synonyms
 - images, antonyms/synonyms from API -pending how many words have images
 - Access second API for supplementary features-(news, stocks enteratainment, etc,)
 - The second API can be searched for new news articles based on the keyword provided.
@@ -41,9 +43,7 @@ I will use functional components during this project. All components will use fu
 
 
 Priority Matrix
-Include an image of your Priority Matrix (X is time and Y is priority)
-
-![img_1716](https://media.git.generalassemb.ly/user/25138/files/ac9ed000-3ea0-11ea-9d2e-0268501f892d)
+![image](https://media.git.generalassemb.ly/user/25138/files/36f12f00-3eb5-11ea-8d0b-5491b8bde940)
 
 ## Project Schedule
 
