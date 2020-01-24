@@ -8,7 +8,11 @@ API Snippet
 
 ## Wireframes
 
-<img width="615" alt="screen shot 2020-01-24 at 10 27 15 am" src="https://media.git.generalassemb.ly/user/25138/files/0650cb80-3e9c-11ea-8cae-76cd0bd11615">
+![image](https://media.git.generalassemb.ly/user/25138/files/e29b7e80-3eb7-11ea-90a5-1b83c96be4cc)
+
+![image](https://media.git.generalassemb.ly/user/25138/files/f21ac780-3eb7-11ea-8ea3-00ba5fd1a4fc)
+
+![image](https://media.git.generalassemb.ly/user/25138/files/01017a00-3eb8-11ea-9348-961f313f81c9)
 
 
 MVP
