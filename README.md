@@ -77,11 +77,14 @@ You are responsible for scheduling time with your squad to seek approval for eac
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Setup HTML CSS | H | 4hrs |
-| Access API for 10 cities | H | 4hrs |
-| Build Search for user input city | H | 8hrs| 
-| CSS + mouseover| H | 8hrs| 
-| Post-MVP: Multi-city exchange rate| H | 8hrs|
+| Setup App.js | H | 4hrs |
+| Access API  | H | 4hrs |
+| Build Searchbar | H | 8hrs| 
+| Main.js| H | 8 hrs| 
+| Definition Render| H | 4hrs| 
+| Header.js| H | 2hrs| 
+| Footer.js| H | 4hrs| 
+| Post-MVP: SearchBar suggested| H | 6 hrs|
 | Post-MVP: CSS mouseovers| H | 4hrs|
 
 Day	Deliverable	Status
