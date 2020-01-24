@@ -14,29 +14,40 @@ API Snippet
 
 
 MVP
-My MVP will involve having a search bar that allows the user to access the complete OwlBot dictionary API and look up any word from the site. Upon selecting the word, the page will redirect to a the word's definition on a new component called defintion.js..
 
-MVP EXAMPLE:
-Find and use external api
-Render data on page
-Allow user to choose favorites
-Save their choices in firebase
+My MVP will involve having a search bar that allows the user to access the complete Merriam-Webster dictionary API and look up any word from the site. Upon selecting the word, the page will redirect to a the word's definition on a new component called definition.js. I will also have a component named search to handle to onclick of the searchbar.
+
+-Access Meriam-Webster API
+-Create searchbar for words.
+-Navigate to new component page upon click.
+- Render supporting two supporting details
+-Home button navigating back to Home
+
 Post-MVP
-List any additional functionality you would like to implement once MVP has been reached.
 
-PostMVP EXAMPLE:
-Add user auth
-React Component Hierarchy
-Include an image of your component hierarchy that shows the data flow and architectural design of your app.
+-Searchbar will render suggestions based on input
+- images from API -pending how many words have images
+- Access second API for supplementary features-(news, stocks enteratainment, etc,)
+- The second API can be searched for new news articles based on the keyword provided.
+- CSS styling.
 
 Components
-Based on the initial logic defined in the previous section, try to breakdown the logic further into stateless/stateful components.
+See Wireframing above. MVP will have six components.
 
-Component	Description	Type
-Header	The Header receives props that render multiple nav titles and links	Functional
-Main	This component houses multiple rendered views through React Router and controls data received from the initial API call in state	Class
+App- Organizes and manages page rendering of page components of header, search, footer, and post MVP features.
+Header- App title and back to home button
+Main- Will handle majority of the function of page rendering the definition
+Search- will manage the onclick search.
+Images- will manage rendering of picture.
+Footer- Only for design purposes.
+
+I will use functional components during this project. All components will use functions.
+
+
 Priority Matrix
 Include an image of your Priority Matrix (X is time and Y is priority)
+
+![img_1716](https://media.git.generalassemb.ly/user/25138/files/ac9ed000-3ea0-11ea-9d2e-0268501f892d)
 
 Timeframes
 Timeframes are key in the development cycle. You have limited time to code and so much to accomplish! Look at all of your planned files and components, and all of the areas of development you are planning and give an estimate of how long each one will take to complete. It's always best to pad the time to account for the unknown, so be sure to add an additional hour or two to play it safe. As you progress, you can update the "Time Invested" column to keep track of your hours, but that number should turn into "Actual Time" by the presentation day. Also, put a winter-themed gif at the top of your readme before you pitch to show you read the instructions thoroughly.
