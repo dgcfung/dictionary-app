@@ -22,6 +22,8 @@ MVP
 
 Plan to parse at least two additional fields of images, antonyms, synonyms. Additional fields will depend on their appearance on the page after rendering.
 
+Description.js will manage all parsing of data onto the page. Search.js will manage the submission from the searchBar.
+
 Post-MVP
 
 - Top priortiy: Searchbar will render suggestions based on input
@@ -32,7 +34,7 @@ Post-MVP
 - CSS styling.
 
 Components
-See Wireframing above. MVP will have six components.
+See Wireframing above. MVP will have six components. 
 
 App- Organizes and manages page rendering of page components of header, search, footer, and post MVP features.
 Header- App title and back to home button
