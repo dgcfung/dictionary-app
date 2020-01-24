@@ -71,6 +71,19 @@ This schedule will be used to keep track of your progress throughout the week an
 
 You are responsible for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding Saturday and Sunday.
 
+
+## Timeframes
+
+
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Setup HTML CSS | H | 4hrs |
+| Access API for 10 cities | H | 4hrs |
+| Build Search for user input city | H | 8hrs| 
+| CSS + mouseover| H | 8hrs| 
+| Post-MVP: Multi-city exchange rate| H | 8hrs|
+| Post-MVP: CSS mouseovers| H | 4hrs|
+
 Day	Deliverable	Status
 Jan 24th	Project Pitch / Wireframes / Priority Matrix / Functional Components	Incomplete
 Jan 27th	Build searchbar., API working	Incomplete
