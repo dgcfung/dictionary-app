@@ -23,8 +23,8 @@ MVP
 
 -Access Meriam-Webster API
 -Create searchbar for words.
--Navigate to new component page upon click.
-- Render supporting two supporting details
+- Navigate to new component page upon click.
+-Render supporting two supporting details
 -Home button navigating back to Home
 -Parsing defintition.
 
