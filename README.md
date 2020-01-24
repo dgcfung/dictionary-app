@@ -60,7 +60,7 @@ Timeframes
 | Header.js| M | 2hrs|
 | Footer.js| M | 1hrs|
 | Search.js| H | 4 hrs|
-| Main.js| H 8hrs|
+| Main.js| H | 8 hrs|
 | Search suggested results| H | 6 hrs|
 | Post-MVP: CSS| H | 8hrs|
 | Post-MVP: Second API| M| 4hrs|
@@ -78,6 +78,8 @@ Jan 28th	Defintion render, header/footer	Incomplete
 Jan 29th	Post/MVP:Suggest search results	Incomplete
 Jan 30th	Post-MVP/CSS, 2nd API	Incomplete
 Jan 31tst	Present	Incomplete
+
+
 Additional Libraries
 Use this section to list all supporting libraries and thier role in the project. React Router Dom and Axios should be listed here at the very least.
 
