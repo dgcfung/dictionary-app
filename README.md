@@ -20,6 +20,8 @@ MVP
 -Home button navigating back to Home
 -Parsing defintition.
 
+Plan to parse at least two additional fields of images, antonyms, synonyms. Additional fields will depend on their appearance on the page after rendering.
+
 Post-MVP
 
 - Top priortiy: Searchbar will render suggestions based on input
@@ -66,7 +68,7 @@ Timeframes
 | App.js | M | 4hrs |
 | Access API | H | 4 hrs |
 | Build Searchbar | H | 8hrs| 
-| Definition render| H | 4hrs| 
+| Definition render, images, synonyms, antonyms| H | 4hrs| 
 | Header.js| M | 2hrs|
 | Footer.js| M | 1hrs|
 | Search.js| H | 4 hrs|
