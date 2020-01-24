@@ -11,10 +11,7 @@ API Snippet
 <img width="615" alt="screen shot 2020-01-24 at 10 27 15 am" src="https://media.git.generalassemb.ly/user/25138/files/0650cb80-3e9c-11ea-8cae-76cd0bd11615">
 
 
-
 MVP
-
-My MVP will involve having a search bar that allows the user to access the complete Merriam-Webster dictionary API and look up any word from the site. Upon selecting the word, the page will redirect to a the word's definition on a new component called definition.js. I will also have a component named search to handle to onclick of the searchbar.
 
 -Access Meriam-Webster API
 -Create searchbar for words.
@@ -24,8 +21,8 @@ My MVP will involve having a search bar that allows the user to access the compl
 
 Post-MVP
 
--Searchbar will render suggestions based on input
-- images from API -pending how many words have images
+- Top priortiy: Searchbar will render suggestions based on input
+- images, antonyms/synonyms from API -pending how many words have images
 - Access second API for supplementary features-(news, stocks enteratainment, etc,)
 - The second API can be searched for new news articles based on the keyword provided.
 - CSS styling.
@@ -53,13 +50,13 @@ Include an image of your Priority Matrix (X is time and Y is priority)
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Jan 2rd| Complete wireframes and creation of repository. | Complete
-|Jan 3rd| Core Application Structure (HTML, CSS, etc.)/Pseudocode for JS Complete
-|Jan 5th| Get API Display for ten cities & search button  | Complete
-|Jan 6th| Add mouseover to button & mobile implementation|  Complete
-|Jan 7th| Add CSS styling  | Complete- last fixes on styling required.
-|Jan 8th| Post MVP | In progess
-|Jan 9th| Present | In progress
+|Jan 24th| Complete wireframes and creation of repository. Project approval| Incomplete
+|Jan 27th| Set up components and access API. | Incomplete
+|Jan 28th| Parse data to page including post-MVP| Incomplete
+|Jan 29th| Searchbar post MVP | Incomplete
+|Jan 30th| Add CSS Styling & post-MVP| Incomplete
+|Jan 31st| Presentation| inComplete- last fixes on styling required.
+
 
 Timeframes
 
@@ -78,11 +75,6 @@ Timeframes
 | Post-MVP: CSS| H | 8hrs|
 | Post-MVP: Second API| M| 4hrs|
 Total: 53 hours.
-
-Project Schedule
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.
-
-You are responsible for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding Saturday and Sunday.
 
 
 ## Timeframes
