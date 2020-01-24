@@ -28,6 +28,15 @@ MVP
 -Home button navigating back to Home
 -Parsing defintition.
 
+Components: 
+App.js - functional
+Main.js- functional
+Header.js- functional
+Footer.js- functional
+Description.js - functional
+Search.js- functional
+
+
 Plan to parse at least two additional fields of images, antonyms, synonyms. Additional fields will depend on their appearance on the page after rendering.
 
 Description.js will manage all parsing of data onto the page. Search.js will manage the submission from the searchBar.
