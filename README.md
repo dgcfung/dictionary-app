@@ -1,6 +1,5 @@
-# dictionary-app
+# Dictionary-app
 
-Dictionary-App
 This project will create an interactive dictionary app based on the Merriam-Webster dictionary API. Please refer to the following link: https://www.dictionaryapi.com/api/v3/references/collegiate/json/voluminous?key=87d2992b-b381-4b38-83e5-f42244d14615. Because a plain dictionary may make for a boring user-experience and result in less return visits. I will add a scroll down menu to allow the user to select words based on the keywords entered. Furthermore, I will add styling. Pending time, constraints, I will also access a second API to access latest news/stock ticker/ or entertainment news.
 
 API Snippet
