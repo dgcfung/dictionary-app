@@ -10,7 +10,11 @@ API Snippet
 
 ![image](https://media.git.generalassemb.ly/user/25138/files/e29b7e80-3eb7-11ea-90a5-1b83c96be4cc)
 
+Home Page Appearance before query.
+
 ![image](https://media.git.generalassemb.ly/user/25138/files/f21ac780-3eb7-11ea-8ea3-00ba5fd1a4fc)
+
+Page appearance after querty.
 
 ![image](https://media.git.generalassemb.ly/user/25138/files/01017a00-3eb8-11ea-9348-961f313f81c9)
 
