@@ -89,21 +89,6 @@ Timeframes
 Total: 53 hours.
 
 
-## Timeframes
-
-
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Setup App.js | H | 4hrs |
-| Access API  | H | 4hrs |
-| Build Searchbar | H | 8hrs| 
-| Main.js| H | 8 hrs| 
-| Definition Render| H | 4hrs| 
-| Header.js| H | 2hrs| 
-| Footer.js| H | 4hrs| 
-| Post-MVP: SearchBar suggested| H | 6 hrs|
-| Post-MVP: CSS mouseovers| H | 4hrs|
-
 Day	Deliverable	Status
 Jan 24th	Project Pitch / Wireframes / Priority Matrix / Functional Components	Incomplete
 Jan 27th	Build searchbar., API working	Incomplete
