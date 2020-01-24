@@ -48,6 +48,19 @@ Include an image of your Priority Matrix (X is time and Y is priority)
 
 ![img_1716](https://media.git.generalassemb.ly/user/25138/files/ac9ed000-3ea0-11ea-9d2e-0268501f892d)
 
+## Project Schedule
+
+
+|  Day | Deliverable | Status
+|---|---| ---|
+|Jan 2rd| Complete wireframes and creation of repository. | Complete
+|Jan 3rd| Core Application Structure (HTML, CSS, etc.)/Pseudocode for JS Complete
+|Jan 5th| Get API Display for ten cities & search button  | Complete
+|Jan 6th| Add mouseover to button & mobile implementation|  Complete
+|Jan 7th| Add CSS styling  | Complete- last fixes on styling required.
+|Jan 8th| Post MVP | In progess
+|Jan 9th| Present | In progress
+
 Timeframes
 
 
