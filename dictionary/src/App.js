@@ -1,66 +1,97 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Switch, Route, Link } from 'react-router-dom'
-import './App.css';
 import axios from 'axios'
 import Main from './components/Main'
 import Search from './components/Search'
 import SuggestedWords from './components/Search'
 import Description from './components/Description'
 import index from '.'
+import { getAllWords, getWord} from './services/api-helper';
 
 class App extends React.Component {
 constructor(){
   super()
   this.state={
     words:[],
-    filterValue:''
+    searchedWord: null,
+    searchInput:''
     }
-    this.handleFilterChange= this.handleFilterChange.bind(this)
+    this.handleChange=this.handleChange.bind(this)
+    this.handleClick= this.handleClick.bind(this)
   }
 
-handleFilterChange(event){
-  event.preventDefault()
-  const FilterValue= event.currentTarget.value
-  const lowerCaseFilterValue=  FilterValue.toLowerCase()
+// handleFilterChange(event){
+//   event.preventDefault()
+//   const FilterValue= event.currentTarget.value
+//   const lowerCaseFilterValue=  FilterValue.toLowerCase()
 
-  this.setState(() => {
-      const suggestedWords = this.state.toLowerCaseFilterValue.filter(lowerCaseFilterValue=> lowerCaseFilterValue.includes(lowerCaseFilterValue))
-      console.log(FilterValue)
+//   this.setState(() => {
+//       const suggestedWords = this.state.toLowerCaseFilterValue.filter(lowerCaseFilterValue=> lowerCaseFilterValue.includes(lowerCaseFilterValue))
+//       console.log(FilterValue)
   
 
-      return{
-      words: suggestedWords,
-      filterValue: lowerCaseFilterValue
+//       return{
+//       words: suggestedWords,
+//       searchedWord: null,
+//       filterValue: lowerCaseFilterValue
       
-    }
-})
-}
+//     }
+// })
+// }
 
 
 
-fetchDictionary = async()=>{
-  const wordQuery = ''
-  const response= await axios.get(`https://www.dictionaryapi.com/api/v3/references/collegiate/json/${wordQuery}?key=87d2992b-b381-4b38-83e5-f42244d14615`)
-  const call= response.data
+// fetchDictionary = async()=>{
+//   const wordQuery = ''
+//   const response= await axios.get(`https://www.dictionaryapi.com/api/v3/references/collegiate/json/${wordQuery}?key=87d2992b-b381-4b38-83e5-f42244d14615`)
+//   const call= response.data
+//   this.setState({
+//     words: call
+//   })
+//   // console.log(this.state.words('hello'))
+// }
+
+handleChange=(e)=>{
+  let value= e.target.value;
   this.setState({
-    words: call
+    searchInput: value
   })
-  // console.log(this.state.words('hello'))
+  console.log(value)
+}
+// send the functions down, not the object. cannot change state
+
+handleClick = async(e)=>{
+  e.preventDefault()
+  let word= await getWord(this.state.searchInput);
+  console.log('handleclick')
+  this.setState({
+    searchedWord: word.data
+  })
+  console.log(word.data)
+}
+// send the functions down, not the object. cannot change state
+
+async componentDidMount(){
+  let response= await getAllWords();
+  console.log('componentDidMount')
+  this.setState({
+    words: response.data
+  })
+  console.log(response.data)
 }
 
-componentDidMount(){
-  console.log(this.props)
-  this.fetchDictionary()
-}
 
 render(){
-  console.log(this.state.words)
+  console.log(this.state.searchedWord)
   return (
     <div className="App">
       {/* // <Search OnChange={this.state.filterValue}/> */}
-      <Search newSearch= {this.state.filterValue} onChange= {this.handleFilterChange}/>
-      <SuggestedWords suggestedWords={this.state.words}/>
-      <Description definition= {this.state.words}
+      <Search handleChange={this.handleChange} handleClick={this.handleClick}/>
+      <Description parseDefinition={this.state.searchedWord}/>
+      {/* <Main parseDefinition= {this.state.searchedWord}/> */}
+      {/* <Description parseDefinition={} */}
+      {/* <SuggestedWords suggestedWords={this.}/> */}
+      {/* <Description definition= {this.state.words}/> */}
       
       {/* <newSearc type= "text" value= {this.state.words} onChange={this.handleFilterChange.bind(this)}/> */}
     </div>
