@@ -118,6 +118,9 @@ render(){
             searchInput={this.state.searchInput}
           />
         </Route>
+
+          {/* <Main handleChange= {this.handleChange}/> */}
+
         {/* <Redirect to="/"/> */}
         
       </Switch>  
