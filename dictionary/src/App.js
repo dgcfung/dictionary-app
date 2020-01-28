@@ -87,7 +87,7 @@ async componentDidMount(){
   this.setState({
     words: response.data
   })
-  //console.log(response.data)
+  // console.log(response.data)
 }
 
 
