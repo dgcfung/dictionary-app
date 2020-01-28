@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import { getAllWords, getWord} from '../services/api-helper';
 
 
@@ -9,7 +9,7 @@ import { getAllWords, getWord} from '../services/api-helper';
             searchedWord: null,
         } 
     }
-
+    
 
     async componentDidMount(){
     // e.preventDefault()
@@ -35,14 +35,15 @@ import { getAllWords, getWord} from '../services/api-helper';
     if (this.state.error) {
         return(<h1>There is an error.</h1>)
     }
-
+    //console.log(this.props && this.props.name)
     return (
-       
         <div>   
-            {console.log(props.name)}
+            
             {console.log(this.state.searchedWord && this.state.searchedWord)}
             {/* { console.log(this.state.searchedWord[0])} */}
             {/* <h1>{this.state.parseDefinition && this.state.parseDefinition[0].fl}</h1> */}
+
+            <h1>{this.props && this.props.name}</h1>
         
             <h1>{this.searchedWord && this.searchedWord}</h1>
             {/* <h1>{this.state.searchedword && this.state.searchedword[0].meta.id}</h1> */}
