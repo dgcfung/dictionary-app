@@ -2,7 +2,7 @@ import React, {Component}from 'react'
 import Axios from 'axios'
 
 const Search = props => {
-    console.log(props)
+    //console.log(props)
     return(
         
         <form action="">

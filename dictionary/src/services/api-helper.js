@@ -11,6 +11,7 @@ export const getAllWords= async()=>{
 }
 
 export const getWord= async(word)=>{
-    const response= await axios.get(`https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word}?key=${apiKey}`)
+    const response = await axios.get(`https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word}?key=${apiKey}`)
     return response
+   
 }
