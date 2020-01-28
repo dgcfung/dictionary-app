@@ -41,6 +41,7 @@ constructor(){
 // })
 // }
 
+// pass searched Input down and set it equal to dummy variable
 
 
 // fetchDictionary = async()=>{
@@ -52,6 +53,8 @@ constructor(){
 //   })
 //   // console.log(this.state.words('hello'))
 // }
+
+
 
 handleChange=(e)=>{
   let value= e.target.value;
@@ -100,7 +103,7 @@ render(){
           component={(match) => 
             <Description
               error={this.state.error} 
-              match={match} 
+              match={match}
               parseDefinition={this.state.searchedWord} 
               name={this.state.searchInput} 
               newName= {this.state.searchedWord}
@@ -109,7 +112,11 @@ render(){
         />
 
         <Route exact path="/">
-          <Search handleChange={this.handleChange} handleClick={this.handleClick}/>
+          <Search 
+            handleChange={this.handleChange} 
+            handleClick={this.handleClick}
+            searchInput={this.state.searchInput}
+          />
         </Route>
         {/* <Redirect to="/"/> */}
         

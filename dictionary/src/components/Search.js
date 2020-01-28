@@ -1,4 +1,5 @@
 import React, {Component}from 'react'
+import {Link} from 'react-router-dom'
 import Axios from 'axios'
 
 const Search = props => {
@@ -9,8 +10,10 @@ const Search = props => {
             <h1>Search.js</h1>
             <label>
             Enter Word:
-            <input type= "text" name= "type-query" onChange= {props.handleChange} />
-            <button className= "look-up-def" onClick= {props.handleClick} >Search</button>
+            <input type= "text" value={props.searchInput} name= "type-query" onChange= {props.handleChange} />
+            <Link to={`/description/${props.searchInput}`}>
+            <button className= "look-up-def" >Search</button>
+            </Link>
             </label>
             {/* <input type= "text" onChange={props.newWord} name ="type-query"/>
             <button className= "look-up-def" >Search</button> */}
