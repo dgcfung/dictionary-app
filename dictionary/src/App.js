@@ -9,6 +9,7 @@ import index from '.'
 import { getAllWords, getWord} from './services/api-helper';
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Word from './components/Word'
 
 class App extends React.Component {
 constructor(){
@@ -101,7 +102,7 @@ render(){
       <Switch>
         <Route exact path="/description/:word" 
           component={(match) => 
-            <Description
+            <Word
               error={this.state.error} 
               match={match}
               parseDefinition={this.state.searchedWord} 
@@ -119,6 +120,7 @@ render(){
           />
         </Route>
 
+        
           {/* <Main handleChange= {this.handleChange}/> */}
 
         {/* <Redirect to="/"/> */}

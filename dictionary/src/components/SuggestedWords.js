@@ -14,3 +14,5 @@ const SuggestedWords = props =>{
 }
 
 export default SuggestedWords
+
+
