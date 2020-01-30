@@ -65,8 +65,8 @@ Post-MVP
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| App.js | M | 4hrs | 
-| Access API | H | 4 hrs |
+| App.js | M | 4hrs | 4 hrs| 1/30, 5:00pm|
+| Access API | H | 4 hrs | 4 hrs, 1/25, 3:00pm|
 | Build Searchbar | H | 8hrs| 
 | Definition render, images, synonyms, antonyms| H | 4hrs| 
 | Header.js| M | 2hrs|
