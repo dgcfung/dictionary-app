@@ -47,7 +47,10 @@ import{NavLink} from 'react-router-dom'
 
 
         
+            {/* { this.props.match.match.params.word ? <h1> {this.props.match.match.params.word}</h1> : <h1>Loading</h1> } */}
+
             <h1>{this.props.match.match.params.word}</h1>
+
             {/* <h1>{this.state.searchedWord && this.state.searchedWord[0].meta.id}</h1> */}
             <h1>{this.state.searchedWord && this.state.searchedWord[0].fl}</h1>
 
