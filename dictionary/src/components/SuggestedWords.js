@@ -1,18 +1,18 @@
-import React from 'react'
+// import React from 'react'
 
-const SuggestedWords = props =>{
-    console.log(props)
-    return(
-        <ul>
-            <li>Suggested Words</li>
+// const SuggestedWords = props =>{
+//     console.log(props)
+//     return(
+//         <ul>
+//             <li>Suggested Words</li>
 
-            {props.suggestedWords.map((suggestedWord, index)=> <li key={index}>{suggestedWord}</li>)}
+//             {props.suggestedWords.map((suggestedWord, index)=> <li key={index}>{suggestedWord}</li>)}
 
-        </ul>
-    )
+//         </ul>
+//     )
 
-}
+// }
 
-export default SuggestedWords
+// export default SuggestedWords
 
 

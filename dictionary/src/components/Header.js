@@ -6,12 +6,17 @@ import Description from './Description'
 
 function Header (props){
     return (
-        <div>
-            <NavLink to= '/'>Home</NavLink>
-            <h1>Dictionary</h1>
+        <div className="container">
+        <NavLink to= '/'>
+        <div className="header">
+            <h1 className="header-title"
+           >Dictionary</h1>
+        </div>
+        </NavLink>
         </div>
     )
 
 }
 
 export default Header 
+

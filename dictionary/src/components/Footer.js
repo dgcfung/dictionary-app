@@ -2,8 +2,8 @@ import React from 'react'
 
 function Footer (props){
     return (
-        <div>
-            <h1>Footer</h1>
+        <div className="footer">
+            <h3>© General Assembly: Donald Fung 2020</h3>
         </div>
     )
 

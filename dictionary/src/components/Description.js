@@ -1,5 +1,7 @@
 import React from 'react'
 import { getAllWords, getWord} from '../services/api-helper';
+import{NavLink} from 'react-router-dom'
+// import img from './'
 
 
  class Description extends React.Component{
@@ -33,7 +35,18 @@ import { getAllWords, getWord} from '../services/api-helper';
     console.log(this.state.searchedWord)
     
     return (
-        <div>   
+        <div className="description-div">   
+        {/* <div className= "back-button"> */}
+        <NavLink to= '/'><img src={'../home button.png'}/>
+        </NavLink>
+        {/* </div> */}
+
+       
+        
+
+
+
+        
             <h1>{this.props.match.match.params.word}</h1>
             {/* <h1>{this.state.searchedWord && this.state.searchedWord[0].meta.id}</h1> */}
             <h1>{this.state.searchedWord && this.state.searchedWord[0].fl}</h1>
@@ -42,6 +55,7 @@ import { getAllWords, getWord} from '../services/api-helper';
                 <p>{def}</p>
                 // <Definition def={def}/>
             )}
+            {/* <h3>Look up another word? Click 'Dictionary' to search again.</h3> */}
 
         </div>
     )

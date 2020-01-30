@@ -6,13 +6,13 @@ const Search = props => {
     //console.log(props)
     return(
         
+    <div className= "search-area">
         <form action="">
-            <h1>Search.js</h1>
+            {/* <h1>Search.js</h1> */}
             <label>
-            Enter Word:
-            <input type= "text" value={props.searchInput} name= "type-query" onChange= {props.handleChange} />
+            <input className= "search-bar" placeholder= "Enter Word..." type= "search" results="0" value={props.searchInput} name= "type-query" onChange= {props.handleChange} />
             <Link to={`/description/${props.searchInput}`}>
-            <button className= "look-up-def" >Search</button>
+            <button className= "button" >Search</button>
             </Link>
             </label>
             {/* <input type= "text" onChange={props.newWord} name ="type-query"/>
@@ -22,7 +22,7 @@ const Search = props => {
             {/* add onSubmit to <form>, check passed value from app.js */}
             
         </form>
-        
+        </div> 
     )
 }
 
