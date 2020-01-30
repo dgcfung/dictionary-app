@@ -26,6 +26,8 @@ class App extends React.Component {
     this.handleClick = this.handleClick.bind(this)
   }
 
+  // set initial state & variables + bind of the button.
+
 
 
   handleChange = (e) => {
@@ -36,7 +38,7 @@ class App extends React.Component {
     })
     // console.log(value)
   }
-  // send the functions down, not the object. cannot change state
+  // variable controls changing string the user types, not the object. cannot change state, is loading conditionally renders Loading page. 
 
   handleClick = async (e) => {
     e.preventDefault()
@@ -56,7 +58,7 @@ class App extends React.Component {
       })
     }
   }
-  // send the functions down, not the object. cannot change state
+  // send the functions down, not the object. cannot change state. on click, calls API, loads loading page before API call, and handles error if API search for wor fails.
 
   async componentDidMount() {
     let response = await getAllWords();
@@ -64,36 +66,32 @@ class App extends React.Component {
     this.setState({
       words: response.data
     })
-    // console.log(response.data)
   }
 
 
   render() {
-
-    //console.log(this.state.searchedWord)
     return (
       <div className="App">
 
         <Header />
 
-        {/* ternary */}
-
-
+{/* switch statement protescts routes in case of fail, will remain at default page. */}
         <Switch>
 
+{/* ternary operator handles loading page, while page is loading, loads loading page. else sends props down to word which sends props to description for rendering.*/}
           <Route exact path="/description/:word"
-            render={(match) => 
+            render={(match) =>
               this.state.isLoading
-              ?
-              <Loading />
-              :
-              <Word
-                error={this.state.error}
-                match={match}
-                parseDefinition={this.state.searchedWord}
-                name={this.state.searchInput}
-                newName={this.state.searchedWord}
-              />
+                ?
+                <Loading />
+                :
+                <Word
+                  error={this.state.error}
+                  match={match}
+                  parseDefinition={this.state.searchedWord}
+                  name={this.state.searchInput}
+                  newName={this.state.searchedWord}
+                />
             }
           />
 

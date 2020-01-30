@@ -20,6 +20,7 @@ function Word(props){
                 newName= {props.searchedWord}
             />
         </div>
+        // sends props down to description for parsing. Thesaurus may be later expansion of page.
     )
 
 }

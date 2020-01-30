@@ -9,4 +9,6 @@ function Loading (props){
     
 }
 
+// loading page, only loads momentarily when onLoading variable in App.js is set to true.
+
 export default Loading

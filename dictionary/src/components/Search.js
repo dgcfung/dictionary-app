@@ -15,11 +15,9 @@ const Search = props => {
                         <button className="button" >Search</button>
                     </Link>
                 </label>
-                {/* <input type= "text" onChange={props.newWord} name ="type-query"/>
-            <button className= "look-up-def" >Search</button> */}
-                {/* add onClick, set wordQuery=, new event listener. */}
-                {/* console.log(props.newWord) */}
-                {/* add onSubmit to <form>, check passed value from app.js */}
+
+                {/* takes props down from App.js, originally written onclick to call API for data. Eventually needed to re-organize code for purpose of implementing routes. */}
+        
 
             </form>
         </div>
