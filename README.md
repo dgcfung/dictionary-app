@@ -21,25 +21,17 @@ Page appearance after querty.
 
 MVP
 
--Access Meriam-Webster API
--Create searchbar for words.
-- Navigate to new component page upon click.
--Render supporting two supporting details
--Home button navigating back to Home
--Parsing defintition.
-
-Components: 
-App.js - functional
-Main.js- functional
-Header.js- functional
-Footer.js- functional
-Description.js - functional
-Search.js- functional
+- Accuess Meriam-Webster API
+- Create searchbar for words
+- Navigate to new component page upon click
+- Render supporting to supporting components
+- Home button navigating back to Home
+- Parsing definition.
 
 
-Plan to parse at least two additional fields of images, antonyms, synonyms. Additional fields will depend on their appearance on the page after rendering.
+## Components: 
+All comp[onents will be made in classes. MVP will have six components. 
 
-Description.js will manage all parsing of data onto the page. Search.js will manage the submission from the searchBar.
 
 Post-MVP
 
@@ -50,20 +42,9 @@ Post-MVP
 - The second API can be searched for new news articles based on the keyword provided.
 - CSS styling.
 
-Components
-See Wireframing above. MVP will have six components. 
-
-App- Organizes and manages page rendering of page components of header, search, footer, and post MVP features.
-Header- App title and back to home button
-Main- Will handle majority of the function of page rendering the definition
-Search- will manage the onclick search.
-Images- will manage rendering of picture.
-Footer- Only for design purposes.
-
-I will use functional components during this project. All components will use functions.
 
 
-Priority Matrix
+## Priority Matrix
 ![image](https://media.git.generalassemb.ly/user/25138/files/36f12f00-3eb5-11ea-8d0b-5491b8bde940)
 
 ## Project Schedule
@@ -71,20 +52,20 @@ Priority Matrix
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Jan 24th| Complete wireframes and creation of repository. Project approval| Incomplete
-|Jan 27th| Set up components and access API. | Incomplete
-|Jan 28th| Parse data to page including post-MVP| Incomplete
-|Jan 29th| Searchbar post MVP | Incomplete
-|Jan 30th| Add CSS Styling & post-MVP| Incomplete
-|Jan 31st| Presentation| inComplete- last fixes on styling required.
+|Jan 24th| Complete wireframes and creation of repository. Project approval| Complete
+|Jan 27th| Set up components and access API. | Complete
+|Jan 28th| Parse data to page including post-MVP| Complete
+|Jan 29th| Searchbar post MVP | Complete
+|Jan 30th| Add CSS Styling & post-MVP| Complete
+|Jan 31st| Presentation| Complete- last fixes on styling required.
 
 
-Timeframes
+## Timeframes
 
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| App.js | M | 4hrs |
+| App.js | M | 4hrs | 
 | Access API | H | 4 hrs |
 | Build Searchbar | H | 8hrs| 
 | Definition render, images, synonyms, antonyms| H | 4hrs| 
@@ -107,20 +88,20 @@ Jan 30th	Post-MVP/CSS, 2nd API	Incomplete
 Jan 31tst	Present	Incomplete
 
 
-Additional Libraries
+## Additional Libraries
 Use this section to list all supporting libraries and thier role in the project. React Router Dom and Axios should be listed here at the very least.
 
 Will download Axios and  react-router-dom.
 
-Issues and Resolutions
+## Issues and Resolutions
 
 Majority of issues should arise in mapping and getting the searchbar to work- with additional problems suggesting searches in Post-MVP.
 
-Code Snippet
+## Code Snippet
 Use this section to include a brief code snippet you are proud of, along with a brief description of why.
 
 function reverse(string) {
 	// here is the code to reverse a string of text
 }
-Change Log
+## Change Log
 Use this section to document what changes were made in your overall planning and the reasoning behind those changes.
