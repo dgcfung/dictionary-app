@@ -30,7 +30,8 @@ MVP
 
 
 ## Components: 
-All comp[onents will be made in classes. MVP will have six components. 
+All comp
+onents will be made in classes. MVP will have six components. 
 
 
 Post-MVP
@@ -66,42 +67,59 @@ Post-MVP
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | App.js | M | 4hrs | 4 hrs| 1/30, 5:00pm|
-| Access API | H | 4 hrs | 4 hrs, 1/25, 3:00pm|
+| Access API | H | 4 hrs | 4 hrs| 1/25, 3:00pm|
 | Build Searchbar | H | 8hrs| 
 | Definition render, images, synonyms, antonyms| H | 4hrs| 
-| Header.js| M | 2hrs|
-| Footer.js| M | 1hrs|
-| Search.js| H | 4 hrs|
-| Main.js| H | 8 hrs|
-| Search suggested results| H | 6 hrs|
-| Post-MVP: CSS| H | 8hrs|
-| Post-MVP: Second API| M| 4hrs|
+| Header.js| M | 2hrs| 2 hrs| 1/30, 1:00pm|
+| Footer.js| M | 1hrs| .5 hrs| 1/29, 4:00pm|
+| Search.js| H | 4 hrs| 6 hours| 1/28, 7:00pm|
+| Wordjs| H | 8 hrs| 6 hrs| 1/28, 4:00pm|
+| Search suggested results| H | 6 hrs| 6 hrs|5:30pm|
+| Post-MVP: CSS| H | 8hrs| 14 hrs| 1/30, 2:00pm|
+| Post-MVP: Second API| M| 4hrs| Task begun, but not completed|
 Total: 53 hours.
 
 
 Day	Deliverable	Status
-Jan 24th	Project Pitch / Wireframes / Priority Matrix / Functional Components	Incomplete
-Jan 27th	Build searchbar., API working	Incomplete
-Jan 28th	Defintion render, header/footer	Incomplete
-Jan 29th	Post/MVP:Suggest search results	Incomplete
-Jan 30th	Post-MVP/CSS, 2nd API	Incomplete
+Jan 24th	Project Pitch / Wireframes / Priority Matrix / Functional Components	Complete
+Jan 27th	Build searchbar., API working	Complete
+Jan 28th	Defintion render, header/footer	Complete
+Jan 29th	Post/MVP:Suggest search results	Complete
+Jan 30th	Post-MVP/CSS, 2nd API	Partially Complete
 Jan 31tst	Present	Incomplete
 
 
 ## Additional Libraries
-Use this section to list all supporting libraries and thier role in the project. React Router Dom and Axios should be listed here at the very least.
 
 Will download Axios and  react-router-dom.
 
 ## Issues and Resolutions
 
-Majority of issues should arise in mapping and getting the searchbar to work- with additional problems suggesting searches in Post-MVP.
+Majority of issues should arise in mapping and getting the searchbar to work- with additional problems suggesting searches in Post-MVP.  Referencing state and updating state was difficult. Creating features did not take much time but getting them to connect and function together took majority of the time. Logging on the console, everywhere helped. Began attempting to implement a second thesaurus API due to  inconsistent key fields in the API. Eventually did not implement idea due to time constraints but considered solutions of finding a new API or creating my own JSON file to manually.  May later go back and add additional features.
 
 ## Code Snippet
-Use this section to include a brief code snippet you are proud of, along with a brief description of why.
+ handleClick = async (e) => {
+    e.preventDefault()
 
-function reverse(string) {
-	// here is the code to reverse a string of text
+    this.setState = {
+      isLoading: true,
+    }
+    let word = await getWord(this.state.searchInput);
+    if (word.data.length > 0) {
+      this.setState({
+        searchedWord: word.data,
+        isLoading: false
+      })
+    } else {
+      this.setState({
+        error: 'Word not found'
+      })
+    }
+  }
 }
 ## Change Log
-Use this section to document what changes were made in your overall planning and the reasoning behind those changes.
+Component structure was changed. Post-MVP componenet Thesaurus.js was begun but not completed. 
+
+For completed project, see http://dictionary-app-donald.surge.sh/
+
+![image](https://media.git.generalassemb.ly/user/25138/files/138b2000-439e-11ea-9bd2-db92d859905a)
